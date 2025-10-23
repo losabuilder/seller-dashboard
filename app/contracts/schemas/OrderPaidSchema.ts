@@ -1,0 +1,2 @@
+export const ORDER_PAID_SCHEMA =
+  "tuple(tuple(tuple(tuple(bytes32 skuUid, uint256 quantity, bytes32 orderAttestationUid) item, tuple(uint256 amount, address paymentToken) price, bytes data) itemWithPrice, tuple(uint256 amount, bytes32 reasonHash, bytes data)[] extraCosts)[] items,tuple(uint256 amount, bytes32 reasonHash, bytes data)[] orderWideExtraCoststuple(address plugin, bytes data) pricePlugin, address buyer, uint256 fees, ) orderData, string memo, uint8 paymentType, bytes32 receiptId"

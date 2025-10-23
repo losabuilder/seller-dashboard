@@ -1,0 +1,13 @@
+packages:
+  - .
+
+onlyBuiltDependencies:
+  - '@reown/appkit'
+  - '@tailwindcss/oxide'
+  - bufferutil
+  - keccak
+  - protobufjs
+  - secp256k1
+  - sharp
+  - unrs-resolver
+  - utf-8-validate

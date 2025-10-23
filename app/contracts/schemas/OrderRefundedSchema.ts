@@ -1,0 +1,2 @@
+export const ORDER_REFUNDED_SCHEMA =
+  "tuple(tuple(bytes32 refundedOrderUid, uint256 refundedQuantity, tuple(uint256 amount, address paymentToken) refundedOrderPrice, tuple(uint256 amount, bytes32 reasonHash, bytes data)[] refundedOrderItemExtraCosts)[] refundedItems,tuple(uint256 amount, bytes32 reasonHash, bytes data)[] refundedOrderWideExtraCosts,uint256 refundedFees) refundData, string memo, uint8 refundType, bytes32 receiptId"

@@ -1,0 +1,1 @@
+export const ENUMERABLE_VALIDATING_RESOLVER_SET_ABI = [] as const;

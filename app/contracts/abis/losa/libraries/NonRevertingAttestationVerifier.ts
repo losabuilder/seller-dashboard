@@ -1,0 +1,1 @@
+export const NON_REVERTING_ATTESTATION_VERIFIER_ABI = [] as const;
