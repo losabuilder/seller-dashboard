@@ -12,15 +12,7 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row md:py-0">
           <div className="flex items-center gap-4 md:flex-row md:gap-6">
             <p className="text-muted-foreground text-center text-sm leading-loose md:text-left">
-              Built with <span className="text-red-500">❤️</span> by{" "}
-              <Link
-                href="https://github.com/compose-labs"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium underline underline-offset-4"
-              >
-                Compose Labs
-              </Link>
+              Built with <span className="text-red-500">❤️</span>
             </p>
           </div>
           <div className="flex items-center gap-4">
