@@ -667,29 +667,29 @@ export function useStoreCreationWorkflow() {
       txBuilder.addCall(logoAttestationCall)
     }
 
-    // email attestation
-    if (data.email) {
-      const emailAttestationCall = EASService.createEmailAttestationCall(
-        chainId,
-        {
-          email: data.email,
-        },
-        { refUID: storeAttestationUid }
-      )
-      txBuilder.addCall(emailAttestationCall)
-    }
+    // // email attestation
+    // if (data.email) {
+    //   const emailAttestationCall = EASService.createEmailAttestationCall(
+    //     chainId,
+    //     {
+    //       email: data.email,
+    //     },
+    //     { refUID: storeAttestationUid }
+    //   )
+    //   txBuilder.addCall(emailAttestationCall)
+    // }
 
-    // website attestation
-    if (data.website) {
-      const websiteAttestationCall = EASService.createWebsiteAttestationCall(
-        chainId,
-        {
-          website: data.website,
-        },
-        { refUID: storeAttestationUid }
-      )
-      txBuilder.addCall(websiteAttestationCall)
-    }
+    // // website attestation
+    // if (data.website) {
+    //   const websiteAttestationCall = EASService.createWebsiteAttestationCall(
+    //     chainId,
+    //     {
+    //       website: data.website,
+    //     },
+    //     { refUID: storeAttestationUid }
+    //   )
+    //   txBuilder.addCall(websiteAttestationCall)
+    // }
 
     // Execute transaction
     const txHash = await executeTransaction(txBuilder.getCalls())
