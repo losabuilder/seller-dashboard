@@ -276,8 +276,11 @@ export default function CreateProduct() {
 
       toast.success("Product created successfully!", {
         description:
-          "Copy your Farcaster Frame URL, and paste it into your Farcaster cast.",
+          "Successfully created product!",
       })
+
+      // Redirect to the product page
+      window.location.href = `/products`
     } catch (error) {
       console.error("Form submission error", error)
       toast.error("Failed to submit the form. Please try again.")
