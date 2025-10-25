@@ -1,7 +1,8 @@
 "use client";
 
 import { Address } from "@coinbase/onchainkit/identity";
-import { usePrivy } from "@privy-io/react-auth"
+import { usePrivy } from "@privy-io/react-auth";
+import Link from "next/link";
 
 
 
@@ -57,24 +58,24 @@ export default function HomePage() {
 
       <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {/* Add your dashboard cards/content here */}
-        <div className="rounded-lg border p-4">
+        <Link href="/store" className="rounded-lg border p-4 transition-colors hover:bg-muted/50">
+          <h2 className="font-semibold">Store</h2>
+          <p className="text-sm text-muted-foreground">
+            Manage your store settings
+          </p>
+        </Link>
+        <Link href="/products" className="rounded-lg border p-4 transition-colors hover:bg-muted/50">
           <h2 className="font-semibold">Products</h2>
           <p className="text-sm text-muted-foreground">
             Manage your product catalog
           </p>
-        </div>
-        <div className="rounded-lg border p-4">
+        </Link>
+        <Link href="/orders" className="rounded-lg border p-4 transition-colors hover:bg-muted/50">
           <h2 className="font-semibold">Orders</h2>
           <p className="text-sm text-muted-foreground">
             View and process orders
           </p>
-        </div>
-        <div className="rounded-lg border p-4">
-          <h2 className="font-semibold">Analytics</h2>
-          <p className="text-sm text-muted-foreground">
-            Track your performance
-          </p>
-        </div>
+        </Link>
       </div>
     </div>
   )
